@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ede1e9;
+}
+.header
+{
+    background-color: rgb(214, 116, 147);
+    display: flex;
+    height: auto;
+    width: auto; 
+    
+}
+.header h1
+{
+    color:black;
+    font-size: 18px;  
+    font-family: sans-serif;
+    padding: 9px;
+    margin: 0 10px;  
+
+}
+
+.nav {
+  margin: auto;         
+  display: flex;
+  gap: 28px;   
+  padding: 3px;
+}
+
+.nav a
+{
+    color:white;
+    font-size: 20px;   
+    text-decoration: none;  
+} 
+
+.nav a:hover
+{
+  color:rgb(5, 4, 19);
+  
+}
+
+/*Search Box*/
+.search-box input 
+{
+    padding: 10px;
+    width: 250px;
+    height: 30px;
+    display: inline;
+}
+.like:hover
+{
+    text-decoration: none;
+}
+.like:hover 
+{
+  transform: scale(1.2);
+  transition: 0.3s;
+
+}
+/* Main video section */
+.video{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    gap: 40px;
+}
+
+/* Left text */
+.video-left{
+    flex: 1;
+    color: #333;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.video-left b{
+    display: block;
+    margin: 15px 0 10px;
+    color: #e03f0e;
+    font-size: 18px;
+}
+
+.video-left ul{
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.video-left ul li{
+    margin-bottom: 8px;
+}
+
+/* Right video */
+.video-right{
+    flex: 1;
+    text-align: center;
+}
+
+.video-right video{
+    width: 500%;
+    max-width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.brand-img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.brand-img img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.brand-img img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* 🔹 Responsive (Mobile) */
+@media(max-width:768px){
+    .video{
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .video-right video{
+        height: 220px;
+    }
+}

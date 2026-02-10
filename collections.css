@@ -1,0 +1,199 @@
+*
+{
+    
+    box-sizing: border-box;
+    
+}
+.header
+{
+    background-color: rgb(214, 116, 147);
+    display: flex;
+    height: auto;
+    width: auto; 
+    
+}
+.header h1
+{
+    color:black;
+    font-size: 18px;  
+    font-family: sans-serif;
+    padding: 9px;
+    margin: 0 10px;  
+
+}
+
+.nav {
+  margin: auto;         
+  display: flex;
+  gap: 28px;   
+  padding: 2px;
+  
+}
+
+.nav a
+{
+    color:white;
+    font-size: 20px;   
+    text-decoration: none;  
+} 
+
+.nav a:hover
+{
+  color:rgb(5, 4, 19);
+  
+}
+
+/*Search Box*/
+.search-box input 
+{
+    padding: 10px;
+    width: 250px;
+    height: 30px;
+    display: inline;
+}
+.like:hover
+{
+    text-decoration: none;
+}
+.like:hover 
+{
+  transform: scale(1.2);
+  transition: 0.3s;
+
+}
+
+.collection
+{
+    display: flex;
+    padding: 50px;
+    justify-items: center;
+
+}
+.kid h1
+{
+    text-align: center;
+    color:rgb(10, 1, 3);
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.kid img
+{
+    width: 260px;
+    height: 250px;
+    object-fit: cover;
+    gap: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+
+}
+.kid img:hover
+{
+    transform: scale(1.2);  
+}
+
+.grom h1
+{
+    text-align: center;
+    margin: 20px;
+    color:rgb(10, 1, 3);
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.grom img
+{
+    width: 260px;
+    height: 250px;
+    object-fit: cover;
+    gap: 20px;
+    padding: 20px;
+    
+
+}
+
+
+.gold h1
+{
+    text-align: center;
+    margin: 20px;
+    color:rgb(10, 1, 3);
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.gold img
+{
+    width: 260px;
+    height: 250px;
+    object-fit: cover;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+
+.silver h1
+{
+    text-align: center;
+    margin: 20px;
+    color:rgb(10, 1, 3);
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.silver img
+{
+    width: 260px;
+    height: 250px;
+    object-fit: cover;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-box input {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .collection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kid img,
+  .grom img,
+  .gold img,
+  .silver img {
+    width: 200px;
+    height: 200px;
+  }
+}
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 1024px) {
+
+  .nav {
+    gap: 15px;
+  }
+
+  .kid img,
+  .grom img,
+  .gold img,
+  .silver img {
+    width: 220px;
+    height: 220px;
+  }
+}
